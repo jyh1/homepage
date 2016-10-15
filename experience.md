@@ -4,27 +4,10 @@ title: Experience
 ---
 
 <p class="message">
-  Hey there! This page is a brief introduction of myself.
+  Hey there! This page is a brief introduction of my previous experience.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+My first job in [Qulab](http://home.ustc.edu.cn/~jyh1/) was to maintain a pipeline for analyzing iCLIP-seq data.
+The pipeline basically performs some pre-processing on raw sequencing files, aligns the processed sequences to the genome and calculates per-base reverse transcription stop counts, and finally detects peaks on each transcript.
+At first, I was very confused by the way the pipeline is structured: every part of the pipeline is a stand-alone program, they read files from disk, perform some computation, and output the result back to disk.
+As a former informatics olympiad contestant, I was very concerned about the efficiency of this approach. Every part of the pipeline communicates with each other in a unstructured way, i.e. in text format, and even worse, the communication happened through the hard disk, which is extremely slow considering the sequencing data are usually quite large. 
